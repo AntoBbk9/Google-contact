@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav__bar">
+        <div class="nav__Section">
+            <div class="nav__hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+              </div>
+            <a href="index.html"><img class="nav__logo" src="Google_Contacts_files/contacts_2022_48dp.png" alt="logo_contact"></a>
+            <p class="contact">Contacts</p>
+        </div>
+            <div class="barre__recherche">
+                <button classe="button" aria_label="Recherche" role="button" aria-hiden="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </button>
+                <input class="Recherche" type="search" id="maRecherche" name="recherche" placeholder="Rechercher">
+            </div>
+        </nav>
+        <!-- ........mobile....... -->
+        <div class="headerNavMob">
+            <div class="nav__hamburgerMobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+            <button classe="buttonMobile" aria_label="Recherche" role="button" aria-hiden="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+            </button>
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="navList">
+            <div class="navItem navButton">
+                <div><svg class="strocStyle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                </svg></div>
+                <div>Créer un contact</div>
+            </div>
+            <div class="navItem">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                    </div>
+                    <p>Contacts</p>
+                    <p class="counter">0</p>
+             </div>
+            <div class="navItem">
+                <div>
+                    <span class="mdi--clock-arrow"></span>
+                </div>
+                <p>Fréquents</p>
+            </div>
+              <div class="navItem itemSpace">
+                <p>Libellés</p>
+                <div><svg class="strocStyle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                </svg>
+                </div>
+            </div>
+            <div class="navItem">
+                <div class="addLibellé"></div>
+            </div>
+        </div>
+        <div class="stockElements">
+                <form action="">
+                    <section class="sectionBtn">
+                        <div><span class="material-symbols--arrow-back"></span></div>
+                        <div>
+                        <button id="submit" type="submit" style="border: solid 1px black; background: rgba(128, 128, 128, 0.271);">Enregistrer</button>
+                        </div>
+                    </section>
+                    <img class="imgSilhouette" src="Google_Contacts_files/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png" alt="photo_silhoute">
+                    <div class="libelle">+ Libellés</div>
+                    <div class="spaceBtwn">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                </svg>
+                        </div>
+                        <div>
+                            <label for="firstName">Prénom</label><br>
+                            <input class="inputForm" type="text" id="firstName" style="border: solid 1px black;">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="lastName">Nom</label><br>
+                        <input class="inputForm" type="text" id="lastName" style="border: solid 1px black;">
+                    </div>
+                    <div>
+                        <label for="entreprise">Entreprise</label><br>
+                        <input class="inputForm" type="text" id="entreprise" style="border: solid 1px black;">
+                    </div>
+                    <div>
+                        <label for="fonction">Fonction</label><br>
+                        <input class="inputForm" type="text" id="fonction" style="border: solid 1px black;">
+                    </div><br>
+                    <div class="button">
+                        <div class="inputMail"></div>
+                        <button class="btnEmail">Ajouter une adresse e-mail<button><br>
+                    </div><br>
+                    <div>
+                        <label for="téléphone">Téléphone</label><br>
+                        <input class="inputForm" type="text" id="telephone" style="border: solid 1px black;">
+                    </div>
+                    <div>
+                        <label for="start">date</label><br>
+                        <input class="inputForm" id="start" name="trip-start" value="yyyy-MM-dd" style="border: solid 1px black;"/>
+                    </div>
+                    <div>
+                        <label for="notes">Notes</label><br>
+                        <textarea class="textareaform" type="text" id="notes" style="border: solid 1px black;"></textarea>
+                    </div>
+                </form>
+            <section class="allContact">
+                    <h3>Contacts</h3>
+                <div class="contactArr"></div>
+                <table>
+                    <tr>
+                        <td>Titre</td>
+                        <td>Email</td>
+                        <td>Numéro de téléphone</td>
+                        <td>Fonction</td>
+                        <td>Buttons</td>
+                    </tr>
+                    <hr>
+                    <tr></tr>
+                </table>
+                <div class="table"></div>
+            </section>
+            <section class="creationLibellé">
+                    <h1>Créer un libellé</h1><br>
+                    <div>
+                        <label for="libellé">Nouveau libellé</label><br>
+                        <input class="inputForm" type="text" id="libellé" style="border: solid 1px ;"><br>
+                    </div>
+                    <div class="btnLibellé">
+                        <button class="closedWindow">Non, ne rien faire</button>
+                        <button class="submitLibellé">Enregistrer</button>
+                </div>
+            </section>
+            <button class="createContactMobile">
+                <div><svg class="strocStyleMobile" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                    </svg>
+                </div>
+            </button>    
+        </div>
+        <!-- parties mobile -->
+        <section class="navListMobile">
+            <div class="menuMobile">
+                <nav class="nav__bar">
+                    <div class="nav__Section">
+                        <a href="index.html"><img class="nav__logoMobile" src="Google_Contacts_files/contacts_2022_48dp.png" alt="logo_contact"></a>
+                        <p class="contactMobile">Contacts</p>
+                    </div>
+                    </nav>
+    
+                <div class="navItem">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                    </div>
+                    <p>Contacts</p>
+                </div>
+                <div class="navItem">
+                    <div>
+                        <span class="mdi--clock-arrow"></span>
+                    </div>
+                    <p>Fréquents</p>
+                </div>
+                  <div class="navItem itemSpace">
+                    <p>Libellés</p>
+                    <div><svg class="strocStyle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+    
+    </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
