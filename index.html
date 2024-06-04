@@ -10,11 +10,11 @@
     <header>
         <nav class="nav__bar">
         <div class="nav__Section">
-            <div class="nav__hamburger">
+            <div class="hamburger" title="Menu principal" role="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                   </svg>
-              </div>
+            </div>
             <a href="index.html"><img class="nav__logo" src="Google_Contacts_files/contacts_2022_48dp.png" alt="logo_contact"></a>
             <p class="contact">Contacts</p>
         </div>
@@ -43,7 +43,7 @@
 
     </header>
     <main class="main">
-        <div class="navList">
+        <div class="sideBar">
             <div class="navItem navButton">
                 <div><svg class="strocStyle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                     <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
@@ -87,44 +87,91 @@
                     <img class="imgSilhouette" src="Google_Contacts_files/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png" alt="photo_silhoute">
                     <div class="libelle">+ Libellés</div>
                     <div class="spaceBtwn">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                    </svg>
+                            </div>
+                            <div>
+                                <div>
+                                    <!-- <label for="firstName">Prénom</label><br> -->
+                                    <input class="inputForm" type="text" id="firstName" placeholder="Prénom" style="border: solid 2px black;">
+                                </div>
+                                <div>
+                                    <!-- <label for="lastName">Nom</label><br> -->
+                                    <input class="inputForm" type="text" id="lastName" placeholder="Nom" style="border: solid 2px black; margin-top: 10px;">
+                                </div>
+                            </div>    
+                    </div>  
+                    <div class="spaceBtwn"> 
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7V3H2v18h20V7zM6 19H4v-2h2zm0-4H4v-2h2zm0-4H4V9h2zm0-4H4V5h2zm4 12H8v-2h2zm0-4H8v-2h2zm0-4H8V9h2zm0-4H8V5h2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8zm-2-8h-2v2h2zm0 4h-2v2h2z"/>
+                            </svg>
+                        </div> 
+                        <div>
+                            <div>
+                                <!-- <label for="entreprise">Entreprise</label><br> -->
+                                <input class="inputForm" type="text" id="entreprise" placeholder="Entreprise" style="border: solid 2px black;">
+                            </div>
+                            <div>
+                                <!-- <label for="fonction">Fonction</label><br> -->
+                                <input class="inputForm" type="text" id="fonction" placeholder="Fonction" style="border: solid 2px black; margin-top: 10px;">
+                            </div>  
+                        </div>  
+                    </div>        
+                    <div class="spaceBtwn"> 
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"/>
+                            </svg>
+                        </div> 
+                        <div>
+                            <div>
+                                <input class="inputForm" type="email" id="email" placeholder="Email" style="border: solid 2px black;">
+                            </div>
+                            <div class="button">
+                                <div class="inputMail" style="margin-top: 10px;"></div>
+                                <button class="btnEmail">Ajouter une adresse e-mail<button>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="spaceBtwn">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <input class="inputForm" type="text" id="telephone" placeholder="+243" style="border: solid 2px black; width: 4rem;">
+                            <input class="inputForm" type="text" id="telephone" placeholder="Téléphone" style="border: solid 2px black; width: 15.5rem;">
+                        </div>
+                    </div>
+                    <div class="spaceBtwn">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M18 9a3 3 0 0 1 2.995 2.824L21 12v3c0 .64-.379 1.139-.882 1.367l-.118.047V20a2 2 0 0 1-1.85 1.995L18 22H6a2 2 0 0 1-1.995-1.85L4 20v-3.585a1.489 1.489 0 0 1-.993-1.27L3 15v-3a3 3 0 0 1 2.824-2.995L6 9zm-.067 6.7a1 1 0 0 0-1.09-.072l-.11.072l-.266.2a3 3 0 0 1-3.429.12l-.171-.12l-.267-.2a1 1 0 0 0-1.09-.072l-.11.072l-.267.2a3 3 0 0 1-3.428.12l-.172-.12l-.266-.2a1 1 0 0 0-1.09-.072l-.11.072l-.067.05V20h12v-4.25zM18 11H6a1 1 0 0 0-1 1v2.005a3 3 0 0 1 3.467.095l.266.2a1 1 0 0 0 1.2 0l.267-.2a3 3 0 0 1 3.6 0l.267.2a1 1 0 0 0 1.2 0l.266-.2A3 3 0 0 1 19 14.005V12a1 1 0 0 0-1-1m-5.4-8.8a8.843 8.843 0 0 1 1.147 1.073C14.271 3.862 15 4.855 15 6a3 3 0 1 1-6 0c0-1.145.73-2.138 1.253-2.727A8.843 8.843 0 0 1 11.4 2.2a1 1 0 0 1 1.2 0M12 4.334a6.384 6.384 0 0 0-.253.268C11.271 5.138 11 5.645 11 6a1 1 0 1 0 2 0c0-.355-.27-.862-.747-1.398A6.384 6.384 0 0 0 12 4.334"/></g>
+                            </svg>
+                        </div>
+                            <div>
+                                <!-- <label for="start">date</label><br> -->
+                                <input class="inputForm" id="start" type="text" placeholder="Jour" name="trip-start" style="border: solid 2px black; width: 4rem;"/>
+                            </div>
+                            <div>
+                                <!-- <label for="start">date</label><br> -->
+                                <input class="inputForm" id="start" type="text" placeholder="Mois" name="trip-start" style="border: solid 2px black; width: 10rem;"/>
+                            </div>
+                            <div>
+                                <!-- <label for="start">date</label><br> -->
+                                <input class="inputForm" id="start" type="text" placeholder="Année" name="trip-start" style="border: solid 2px black; width: 5.2rem;"/>
+                            </div>
+                        </div> 
+                        <div class="spaceBtwn">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M16 4H4c-1.1 0-2 .9-2 2v12.01c0 1.1.9 1.99 2 1.99h16c1.1 0 2-.9 2-2v-8zM4 18.01V6h11v5h5v7.01z"/>
                                 </svg>
+                            </div>
+                            <div>
+                                <!-- <label for="notes">Notes</label><br> -->
+                                <textarea class="textareaform" type="text" id="notes" placeholder="Notes" style="border: solid 2px black;"></textarea>
+                            </div>
                         </div>
-                        <div>
-                            <label for="firstName">Prénom</label><br>
-                            <input class="inputForm" type="text" id="firstName" style="border: solid 1px black;">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="lastName">Nom</label><br>
-                        <input class="inputForm" type="text" id="lastName" style="border: solid 1px black;">
-                    </div>
-                    <div>
-                        <label for="entreprise">Entreprise</label><br>
-                        <input class="inputForm" type="text" id="entreprise" style="border: solid 1px black;">
-                    </div>
-                    <div>
-                        <label for="fonction">Fonction</label><br>
-                        <input class="inputForm" type="text" id="fonction" style="border: solid 1px black;">
-                    </div><br>
-                    <div class="button">
-                        <div class="inputMail"></div>
-                        <button class="btnEmail">Ajouter une adresse e-mail<button><br>
-                    </div><br>
-                    <div>
-                        <label for="téléphone">Téléphone</label><br>
-                        <input class="inputForm" type="text" id="telephone" style="border: solid 1px black;">
-                    </div>
-                    <div>
-                        <label for="start">date</label><br>
-                        <input class="inputForm" id="start" name="trip-start" value="yyyy-MM-dd" style="border: solid 1px black;"/>
-                    </div>
-                    <div>
-                        <label for="notes">Notes</label><br>
-                        <textarea class="textareaform" type="text" id="notes" style="border: solid 1px black;"></textarea>
-                    </div>
                 </form>
             <section class="allContact">
                     <h3>Contacts</h3>

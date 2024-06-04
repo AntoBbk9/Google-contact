@@ -5,6 +5,9 @@
     border: none;
     font-family: Roboto, Arial, sans-serif;    
 }
+.display.none {
+  display: none;
+}
 body{
   background: #F6F8FC;
 }
@@ -125,7 +128,7 @@ body{
   display: flex;
   gap: 5px;
   cursor: pointer;
-  
+  margin-bottom: 20px;
 }
 .strocStyle{
   height: 20px;
@@ -134,13 +137,9 @@ body{
 .itemSpace{
   gap: 100px;
 }
-.navList {
-  display: none;
-  gap: 20px;
+.sideBar {
   width: 11%;
   padding-left: 30px;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 .active {
   transform: translate(20px, 50%);
@@ -164,6 +163,10 @@ form{
   display: none;
   flex-direction: column;
   gap: 20px;
+}
+.spaceBtwn{
+  display: flex;
+  gap: 5px;
 }
 .inputForm{
   height: 2rem;
@@ -227,7 +230,7 @@ hr{
 }
 .creationLibellé{
   position: absolute;
-  background-color: #dcdddf;
+  background-color: #eceef1;
   height:12rem;
   width: 20.5rem;
   display: none;
@@ -235,17 +238,20 @@ hr{
   padding-left: 9px;
   padding-top: 20px;
   border-radius: 10Px;
-}
+} 
 .buttonTable{
-  background-color: #d2e9f9;
   border: 1px black solid;
+  border-radius: 6px;
   cursor: pointer;
   width: 70px;
-  height: 20px;
-  gap: 5px;
+  height: 30px;
+}
+.divButton{
+  display: flex;
+  gap : 5px;
 }
 @media screen and (max-width:1024px) {
-  .nav__hamburger{
+  .hamburger{
     display: none;
   }
   .contact{

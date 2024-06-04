@@ -1,4 +1,5 @@
-const burger = document.querySelector(".nav__hamburger");
+const burger = document.querySelector(".hamburger");
+const sideBar = document.querySelector(".sideBar");
 const stockElements = document.querySelector(".stockElements");
 const backBtn = document.querySelector(".material-symbols--arrow-back");
 const createContact = document.querySelectorAll(".navItem");
@@ -25,17 +26,24 @@ const barreRecherche = document.querySelector(".barre__recherche");
 const counter = document.querySelector(".counter");
 let count = 0;
 
+const addClass = (element, className) => {
+    element.classList.add(className); 
+}
+const removeClass = (element, className) => {
+    element.classList.add(className); 
+}
 
-    function burgerMenu(){
-        const navList = document.querySelector(".navList");
-        if(navList.style.display === 'none'){
-            navList.style.display = 'flex';
-            stockElements.style.width = "85%";
-        }else{
-            navList.style.display = 'none';
-            stockElements.style.width = "100%"
-        }
-    }
+burger.addEventListener("click", () =>{
+   burger.classList.toogle("display.none")
+   console.log(burger)
+//     if (sideBar.classList.contains("display.none")){
+//         removeClass(sideBar, "display.none")
+//         console.log(sideBar);
+//     }else{
+//         addClass(sideBar, "display.none")
+//     }
+});
+    
 
     function burgerMenuMobile(){
         if(menuMobile.style.display === 'none'){
@@ -49,7 +57,7 @@ let count = 0;
 
     hamburgerMobile.addEventListener("click", burgerMenuMobile);
 
-    burger.addEventListener("click", burgerMenu);
+  
 
     function contacts(){
             if(form.style.display === 'none'){
@@ -79,7 +87,7 @@ let count = 0;
    }else{
        allContact.style.display = 'none';
    }
-}
+    }
 
    createContact[1].addEventListener("click", everyContacts);
 
@@ -126,6 +134,11 @@ function addContact() {
 
     const supprimer = document.createElement("button");
     supprimer.textContent = "Supprimer";
+
+    const divButton = document.createElement("div");
+    divButton.classList.add("divButton");
+    console.log(divButton);
+    divButton.append(modifier, supprimer);
     
     modifier.classList.add("buttonTable");
     supprimer.classList.add("buttonTable");
