@@ -9,7 +9,9 @@ const firstName = document.getElementById("firstName");
 const lasttName = document.getElementById("lastName");
 const entreprise = document.getElementById("entreprise");
 const fonction = document.getElementById("fonction");
-const telephone = document.getElementById("telephone");
+const codePays = document.getElementById("codePays");
+const numTelephone = document.getElementById("telephone")
+const email = document.getElementById("email");
 const btnEmail = document.querySelector(".btnEmail"); 
 const submit = document.querySelector("#submit");
 const inputMail = document.querySelector(".inputMail");
@@ -34,16 +36,22 @@ const removeClass = (element, className) => {
 }
 
 burger.addEventListener("click", () =>{
-   burger.classList.toogle("display.none")
-   console.log(burger)
-//     if (sideBar.classList.contains("display.none")){
-//         removeClass(sideBar, "display.none")
-//         console.log(sideBar);
-//     }else{
-//         addClass(sideBar, "display.none")
-//     }
+//    burger.classList.toogle("display.none")
+    if (sideBar.classList.contains("display.none")){
+        removeClass(sideBar, "display.none")
+    }else{
+        addClass(sideBar, "display.none")
+    }
 });
-    
+
+// function burgerMenu(){
+//     if(sideBar.style.display === 'none'){
+//         sideBar.style.display = 'flex';
+//     }else{
+//         sideBar.style.display = 'none';
+//     }
+// }
+// burger.addEventListener("click", burgerMenu);
 
     function burgerMenuMobile(){
         if(menuMobile.style.display === 'none'){
@@ -128,7 +136,6 @@ function closedWin(){
 function addContact() {
     const trId = crypto.randomUUID();
 
-
     const modifier = document.createElement("button");
     modifier.textContent = "Modifier";
 
@@ -149,8 +156,8 @@ function addContact() {
     let contact = {
         Titre : firstName.value
         + " "+ lasttName.value,
-        Email : inputMail.querySelector('input').value,
-        Numéro : telephone.value,
+        Email : email.value || inputMail.querySelector('input').value, 
+        Numéro : codePays.value + numTelephone.value,
         Fonction : fonction.value,
         libelles : " ",
         button1 : modifier,
@@ -166,7 +173,7 @@ function addContact() {
     td3.textContent = contact.Numéro;
     td4.textContent = contact.Fonction;
     td5.append(contact.button1, contact.button2);
-    if(telephone === contact.Numéro){
+    if(numTelephone === contact.Numéro){
         alert("Ce contact existe déjà");
     }else{
     tr.append(td1, td2, td3, td4, td5);
@@ -174,22 +181,24 @@ function addContact() {
     }
     firstName.value = " ";
     lasttName.value = " ";
-    telephone.value = " ";
-    inputMail.querySelector('input').value = " ";
+    codePays.value = " ";
+    numTelephone.value = " ";
+    email.value = " ";
+    // inputMail.querySelector('input').value = " ";
     fonction.value = " ";
 
     supprimer.addEventListener("click", function() {
-    const confirmDeletion = confirm("Voulez-vous supprimer ce numéro?");
+    const confirmDelete = confirm("Voulez-vous supprimer ce numéro?");
      const ligneNum = document.getElementById(trId);
-     if(confirmDeletion){
+     if(confirmDelete){
          ligneNum.remove();
          counter.innerHTML = `(${--count})`;
      }
-    })
+     })
     modifier.addEventListener("cllick", function() {
         const ligneNum = document.getElementById(trId);
        
-        ligneNum = form.style.display = 'flex';
+        window.location.href = "form";
    
     });
 }
