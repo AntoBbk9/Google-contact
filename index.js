@@ -32,15 +32,15 @@ const addClass = (element, className) => {
     element.classList.add(className); 
 }
 const removeClass = (element, className) => {
-    element.classList.add(className); 
+    element.classList.remove(className); 
 }
 
 burger.addEventListener("click", () =>{
-//    burger.classList.toogle("display.none")
-    if (sideBar.classList.contains("display.none")){
-        removeClass(sideBar, "display.none")
+//    sideBar.classList.toggle("displaynone")
+    if (sideBar.classList.contains("displaynone")){
+        removeClass(sideBar, "displaynone")
     }else{
-        addClass(sideBar, "display.none")
+        addClass(sideBar, "displaynone")
     }
 });
 
